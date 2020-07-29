@@ -2,7 +2,7 @@
 
 This is a quick build to get some reps working with Angular7, testing routes and basic functionality. Nothing too crazy.
 
-I'll outline below to the best of my ability how to get Angular7 up and running, documenting any additional installs pr packages that I use along the way.
+I'll outline below to the best of my ability how to get Angular7 up and running, documenting any additional installs or packages that I use along the way.
 
 ## Step 1: Install the Angular CLI
 
@@ -32,7 +32,6 @@ Example: ng new cool-new-angular-app.
 This will being the app creation proccess where you will be given a couple prompts to answer such as:
 
 ```
-
 ? Would you like to add Angular routing? (y/N)
 ```
 
@@ -40,10 +39,29 @@ This will being the app creation proccess where you will be given a couple promp
 
 It will also ask you about which stylesheet format you wish to use such as basic CSS or SASS, LESS or Stylus.
 
-
 Once you make your selections the app will begin to build. It takes about another minute and will also return a success message.
 
 *A Git repository will be initialized in the application folder*
+
+Run `ng serve -o` for a dev server (-o is a flag that will open your default browser). Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
+
+## Step 3: Generating components
+
+So the command to generate a new component is `ng generate component (name-of-component-here)` which can be abbreviated to `ng g c (name-of-component-here)`.
+
+Example: ng g c nav.
+
+When you generate a component, it will add a new folder inside your src folder, a level beneath your app folder. This will provide you with the basic file structure consisting of your css, html, a spec.ts, and your main .ts file.
+
+*This will also update your `app.module.ts` file, in which it adds your new component under the NgModule decorator, under declarations.*
+
+For this project I created 4 components:
+
+nav, about, contact, and home.
+
+
+#This is Angulars README content:
 
 # TestAngularApp
 
@@ -51,7 +69,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `ng serve -o` for a dev server (-o is a flag that will open your default browser). Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 

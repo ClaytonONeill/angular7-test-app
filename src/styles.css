@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Imported Fonts: */
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+
+ body, html {
+    font-family: Lato;
+    height: 100%;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
