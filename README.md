@@ -14,7 +14,6 @@ Alright, so once you have these requirements met, go ahead and run the command:
 
 ```
 npm i -g angular/cli
-
 ```
 This should take a minute or so and then return a confirmation message letting you know the installation was a success.
 
@@ -26,7 +25,6 @@ Run the command:
 
 ```
 ng new *insert your app name here*
-
 ```
 
 Example: ng new cool-new-angular-app.
@@ -36,7 +34,6 @@ This will being the app creation proccess where you will be given a couple promp
 ```
 
 ? Would you like to add Angular routing? (y/N)
-
 ```
 
 *This is something you want to confirm if you intend to have multiple pages/components to navigate to in your application.*
@@ -47,22 +44,6 @@ It will also ask you about which stylesheet format you wish to use such as basic
 Once you make your selections the app will begin to build. It takes about another minute and will also return a success message.
 
 *A Git repository will be initialized in the application folder*
-
-## Step 3: Running you project locally
-
-Once the app is created, cd into the created folder.
-
-Run command:
-
-```
-ng serve
-
-```
-
-This will have the project open up on localhost:4200.
-
-If this step was successful, then you are ready to open up you IDE and get started!
-
 
 # TestAngularApp
 
